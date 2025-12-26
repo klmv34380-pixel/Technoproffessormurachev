@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechBlog | Главная</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <nav>
-        <div class="logo"><h2>TechBlog</h2></div>
-        <ul>
-            <li><a href="index.html">Главная</a></li>
+<header class="main-header">
+    <nav class="nav-container">
+        <div class="logo">Tech<span>Blog</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Главная</a></li>
             <li><a href="articles.html">Статьи</a></li>
             <li><a href="reviews.html">Обзоры</a></li>
             <li><a href="media.html">Медиа</a></li>
-            <li><a href="contact.html">Контакты</a></li>
+            <li><a href="contact.html" class="btn-contact">Контакты</a></li>
         </ul>
     </nav>
 </header>
@@ -29,23 +30,41 @@
 
     <section class="grid">
         <article class="card">
-            <img src="https://blog.colobridge.net/wp-content/uploads/2023/11/cyber-brain-scaled.jpg" alt="AI">
-            <h3>Будущее ИИ в 2025 году</h3>
-            <p>Как нейросети меняют нашу повседневную жизнь уже сегодня...</p>
-            <a href="articles.html">Читать далее</a>
+            <div class="card-img">
+                <img src="https://blog.colobridge.net/wp-content/uploads/2023/11/cyber-brain-scaled.jpg" alt="AI">
+            </div>
+            <div class="card-content">
+                <h3>Будущее ИИ в 2025 году</h3>
+                <p>Как нейросети меняют нашу повседневную жизнь уже сегодня...</p>
+                <a href="articles.html" class="card-link">Читать далее</a>
+            </div>
         </article>
+        
         <article class="card">
-            <img src="https://cdn.mediablog.mediapark.uz/corecms/post-thumbnails/01K6FFN89RH9ABK5VMKE5YYBWS.webp" alt="Gadgets">
-            <h3>Топ смартфонов года</h3>
-            <p>Честный обзор новинок от ведущих брендов.</p>
-            <a href="reviews.html">Смотреть обзоры</a>
+            <div class="card-img">
+                <img src="https://cdn.mediablog.mediapark.uz/corecms/post-thumbnails/01K6FFN89RH9ABK5VMKE5YYBWS.webp" alt="Gadgets">
+            </div>
+            <div class="card-content">
+                <h3>Топ смартфонов года</h3>
+                <p>Честный обзор новинок от ведущих брендов.</p>
+                <a href="reviews.html" class="card-link">Смотреть обзоры</a>
+            </div>
         </article>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2025 TechBlog - Все права защищены</p>
-    <p>Следите за нами в соцсетях</p>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-info">
+            <p>&copy; 2025 TechBlog — Все права защищены</p>
+        </div>
+        <div class="footer-socials">
+            <span>Мы в соцсетях:</span>
+            <a href="#">Telegram</a>
+            <a href="#">YouTube</a>
+            <a href="#">VK</a>
+        </div>
+    </div>
 </footer>
 
 </body>
